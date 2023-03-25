@@ -137,7 +137,7 @@ def check_order(self):
         self.driver.find_element_by_xpath('//div[@class = "w1200"]//div[2]//div//div[9]//button[1]').click()
 def finish(self):
     self.driver.quit()
-if __name__ == '__main__':
+if __name__ == '__main__':          # 开始模拟运行
     try:
         con = Concert()             # 具体如果填写请查看类中的初始化函数
         con.enter_concert()         # 打开浏览器
