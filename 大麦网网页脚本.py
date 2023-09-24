@@ -13,8 +13,8 @@ target_url = "https://detail.damai.cn/item.htm?spm=a2oeg.search_category.0.0.4df
 class Concert:
     def __init__(self):
         self.status = 0         # 状态,表示如今进行到何种程度
-        self.login_method = 1   # {0:模拟登录,1:Cookie登录}自行选择登录方式
-        self.driver = webdriver.Chrome(executable_path='chromedriver.exe')        # 默认Chrome浏览器
+        self.login_method = 0   # {0:模拟登录,1:Cookie登录}自行选择登录方式
+        self.driver = webdriver.Chrome(executable_path='chromedriver.exe')        # 默认Chrome浏览器,webdriver是要自己选的，如果已添加PATH可以直接用这句话，否则要指定chromedriver的地址
 def set_cookie(self):
     self.driver.get(damai_url)
     print("###请点击登录###")
